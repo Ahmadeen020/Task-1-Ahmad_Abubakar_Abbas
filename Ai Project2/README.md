@@ -1,6 +1,6 @@
-Data Classification Using AI
+## Data Classification Using AI
 
-DecodeLabs Internship Project 2
+## DecodeLabs Internship Project 2
 
 ### Project Overview
 
