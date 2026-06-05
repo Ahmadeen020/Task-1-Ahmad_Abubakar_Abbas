@@ -1,34 +1,102 @@
-# Iris Classification Project
+Data Classification Using AI
 
-This project demonstrates a simple, fully commented workflow to train and evaluate a classifier on the Iris dataset using scikit-learn.
+DecodeLabs Internship Project 2
 
-Files added/updated
-- `classification.py`: main script that trains, evaluates, and saves the model and scaler to `models/`.
-- `requirements.txt`: Python package requirements.
-- `models/`: directory created at runtime to store serialized artifacts.
+### Project Overview
 
-Setup and run (PowerShell)
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate
-pip install -r requirements.txt
-python "Ai Project2\classification.py"
-```
+This project demonstrates a basic Machine Learning classification workflow using the Iris Flower Dataset. The goal is to train a model that can accurately classify iris flowers into their respective species based on flower measurements.
 
-How to load the saved model and scaler
+---
 
-```python
-import joblib
-model = joblib.load('Ai Project2/models/iris_logistic_regression.joblib')
-scaler = joblib.load('Ai Project2/models/scaler.joblib')
+## Objectives
 
-# Example: predict for a new sample (replace values with your measurements)
-sample = [[5.1, 3.5, 1.4, 0.2]]
-sample_scaled = scaler.transform(sample)
-print(model.predict(sample_scaled))
-```
+* Load and understand a dataset
+* Perform data preprocessing
+* Split data into training and testing sets
+* Apply a classification algorithm
+* Evaluate model performance
+* Save the trained model for future use
 
-If you want, I can also:
-- add a command-line interface to `classification.py` to accept custom samples
-- add unit tests or a minimal runner script
-- run the script here to verify installation (note: may require installing packages)
+---
+
+## Dataset
+
+The Iris Dataset is a well-known machine learning dataset containing 150 flower samples.
+
+### Features
+
+1. Sepal Length
+2. Sepal Width
+3. Petal Length
+4. Petal Width
+
+### Target Classes
+
+* Setosa
+* Versicolor
+* Virginica
+
+---
+
+## Technologies Used
+
+* Python
+* Scikit-Learn
+* Joblib
+
+---
+
+## Machine Learning Workflow
+
+### 1. Data Loading
+
+The Iris dataset is loaded from Scikit-Learn.
+
+### 2. Data Splitting
+
+The dataset is divided into:
+
+* 80% Training Data
+* 20% Testing Data
+
+### 3. Feature Scaling
+
+StandardScaler is used to normalize feature values.
+
+### 4. Model Training
+
+A Logistic Regression classifier is trained using the scaled training data.
+
+### 5. Model Evaluation
+
+The model is evaluated using:
+
+* Accuracy Score
+* Confusion Matrix
+* F1 Score
+* Classification Report
+
+### 6. Model Saving
+
+The trained model and scaler are saved using Joblib.
+
+---
+
+## Expected Output
+
+The program displays:
+
+* Dataset information
+* Accuracy score
+* F1 score
+* Confusion matrix
+* Classification report
+* Example predictions
+
+---
+
+## Author
+
+Ahmad Abubakar Abbas
+
+DecodeLabs Artificial Intelligence Internship 2026
