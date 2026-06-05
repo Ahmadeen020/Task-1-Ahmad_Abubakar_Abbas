@@ -1,4 +1,4 @@
-# Data Classification Using AI - DecodeLabs Internship Project 2
+# Data Classification Using AI
 
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
